@@ -1,0 +1,29 @@
+---
+title: Use _nrm_ -- npm registry manager
+description: "easy and fast switch between different npm registries"
+date: June 29 2022
+---
+
+## Install
+```
+    $ npm install -g nrm
+```
+
+## Example
+``` shell
+    $ nrm ls
+
+    * npm ---------- https://registry.npmjs.org/
+      yarn --------- https://registry.yarnpkg.com/
+      tencent ------ https://mirrors.cloud.tencent.com/npm/
+      cnpm --------- https://r.cnpmjs.org/
+      taobao ------- https://registry.npmmirror.com/
+      npmMirror ---- https://skimdb.npmjs.com/registry/
+
+    $ nrm use cnpm //switch registry to cnpm
+
+    $ nrm test // test network speed for each registry
+
+    $ nrm add xxx(company name) https://yourcompany.registry.url/
+
+```
