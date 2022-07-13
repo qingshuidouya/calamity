@@ -8,15 +8,6 @@ date: July 13 2022
 
 Website : http://www.jenv.be
 
-Maintainers :
-- [Gildas Cuisinier](https://github.com/gcuisinier/)
-
-Future maintainer in discussion:
-- [Benjamin Berman](https://github.com/doctorpangloss)
-
-As he makes an incredible work by taking time to merge the Pull Request on his fork, I (@gcuisinier) am in discussion with him to take part of jEnv directly if he wants.
-Whatever his decision, I thank him for his work, and to have convincing me to think about the future of jEnv and accepting a new maintainer for the good of the project.
-
 ## What's jEnv ?
 
 This is an updated fork of `jenv`, a beloved Java environment manager adapted from `rbenv`.
@@ -92,7 +83,7 @@ Continue to the next section to install java.
 
 **Untested**: While this fork has improved `fish` shell support, it has not been tested by this maintainer. To install `jenv` for Fish according to the contributor's instructions:
 
-```sh
+```bash
 echo 'set PATH $HOME/.jenv/bin $PATH' >> ~/.config/fish/config.fish
 echo 'status --is-interactive; and jenv init - | source' >> ~/.config/fish/config.fish
 cp ~/.jenv/fish/jenv.fish ~/.config/fish/functions/jenv.fish
@@ -208,11 +199,3 @@ $ jenv versions
   openjdk64-11.0.2
   oracle64-1.8.0.202-ea
 ```
-
-#### 2.2 Other Workflows
-
-Please contribute your own using a pull request!
-
-### 3 Known Issues
-
-Users seem to have issues using `jenv` with Fish. Please report any here.
